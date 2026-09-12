@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 15px;
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+  color: #222;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.campo-grupo {
+  margin-bottom: 20px;
+}
+
+.campo-grupo label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #1565c0;
+}
+
+input.valido,
+select.valido {
+  border-color: #2e7d32;
+}
+
+input.invalido,
+select.invalido {
+  border-color: #c62828;
+}
+
+.msg-error {
+  display: none;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #c62828;
+}
+
+.msg-error.visible {
+  display: block;
+}
+
+.campo-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+}
+
+.campo-checkbox input {
+  width: auto;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #1565c0;
+  color: white;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+.oculto {
+  display: none;
+}
+
+#mensaje-exito {
+  margin-top: 20px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 6px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+#fortaleza {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
